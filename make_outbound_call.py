@@ -26,4 +26,4 @@ def make_outbound_call(assistant_id: str, phone_number: str):
         raise error
 
 #  number for testing
-make_outbound_call(assistant_id, "+917204218098")
+# make_outbound_call(assistant_id, "+917204218098")
