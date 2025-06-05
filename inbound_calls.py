@@ -10,8 +10,8 @@ client = Vapi(token=os.getenv("VAPI_TOKEN"))
 def configure_inbound_calls(phone_number_id: str, assistant_id: str):
     try:
         updated_number = client.phone_numbers.update(
-            phone_number_id,
-            assistant_id=assistant_id,
+            phone_number_id,  # The ID of the phone number to update
+            request={"assistant_id": assistant_id}  # The payload passed as the 'request' keyword argument
         )
         print(f"Phone number {phone_number_id} configured to use assistant {assistant_id}")
         return updated_number
