@@ -48,5 +48,5 @@ def create_support_assistant():
 
 
 # Create the assistant
-create_support_assistant()
+# create_support_assistant()
 

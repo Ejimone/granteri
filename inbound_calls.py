@@ -20,4 +20,7 @@ def configure_inbound_calls(phone_number_id: str, assistant_id: str):
         raise error
 
 
+phone_number_id = os.getenv("PHONE_NUMBER_ID")
+assistant_id = os.getenv("ASSISTANT_ID")
 
+configure_inbound_calls(phone_number_id, assistant_id)
