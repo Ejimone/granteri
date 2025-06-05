@@ -1,0 +1,10 @@
+livekit
+livekit-agents[openai,deepgram,cartesia,silero,turn_detector]
+livekit-plugins-noise-cancellation
+python-dotenv
+vapi-python
+fastapi
+uvicorn
+pydantic
+requests
+flask

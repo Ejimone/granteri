@@ -1,5 +1,34 @@
 {
+  "name": "granteri-voice-agent",
+  "version": "1.0.0",
+  "description": "A robust voice AI agent system for inbound and outbound calls",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "dev": "python -m livekit.agents.cli dev test.py",
+    "demo": "python demo.py",
+    "test": "python -m pytest tests/",
+    "docker:build": "docker build -t granteri-agent .",
+    "docker:run": "docker-compose up -d",
+    "docker:stop": "docker-compose down",
+    "setup": "./start.sh"
+  },
   "dependencies": {
     "@vapi-ai/server-sdk": "^0.9.1"
+  },
+  "keywords": [
+    "voice-ai",
+    "telephony",
+    "vapi",
+    "livekit",
+    "agent",
+    "fastapi",
+    "webhook"
+  ],
+  "author": "Evidence",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/granteri.git"
   }
 }
