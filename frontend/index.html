@@ -1,24 +1,34 @@
-<script>
-  var vapiInstance = null;
-  const assistant = "assistant_id"; // Substitute with your assistant ID
-  const apiKey = "your_public_api_key"; // Substitute with your Public key from Vapi Dashboard.
-  const buttonConfig = {}; // Modify this as required
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var vapiInstance = null;
+      const assistant = "assistant_id"; // Substitute with your assistant ID
+      const apiKey = "your_public_api_key"; // Substitute with your Public key from Vapi Dashboard.
+      const buttonConfig = {}; // Modify this as required
 
-  (function (d, t) {
-    var g = document.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    g.src =
-      "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g, s);
+      (function (d, t) {
+        var g = document.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src =
+          "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
 
-    g.onload = function () {
-      vapiInstance = window.vapiSDK.run({
-        apiKey: apiKey, // mandatory
-        assistant: assistant, // mandatory
-        config: buttonConfig, // optional
-      });
-    };
-  })(document, "script");
-</script>
+        g.onload = function () {
+          vapiInstance = window.vapiSDK.run({
+            apiKey: apiKey, // mandatory
+            assistant: assistant, // mandatory
+            config: buttonConfig, // optional
+          });
+        };
+      })(document, "script");
+    </script>
+  </body>
+</html>
