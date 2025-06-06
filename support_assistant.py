@@ -34,7 +34,7 @@ def create_support_assistant():
                 "voice_id": "jennifer",
             },
             # Set the first message
-            first_message="Hi there, this is Alex from TechSolutions customer support. How can I help you today?",
+            first_message="Hi there, this is Alex from OpenCode customer support. How can I help you today?",
         )
         
         print(f"Assistant created: {assistant.id}")
@@ -48,5 +48,5 @@ def create_support_assistant():
 
 
 # Create the assistant
-# create_support_assistant()
+create_support_assistant()
 
